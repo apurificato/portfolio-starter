@@ -1,0 +1,127 @@
+:root {
+    --main-color: skyblue;
+    --secondary-color: #3b3b3b;
+
+}
+
+/* RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* GLOBAL CLASSES */
+.main-color {
+    color: var(--main-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+/* CUSTOM STYLES */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    padding: 8px 3%;
+}
+
+header .logo:active {
+
+}
+
+header nav a:not(:last-child) {
+    margin-right: 15px 
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0 40px;
+}
+
+figure .hero-image-wrap {
+    /* flex: 1; */
+    /* flex-basis: 30%; */
+    /* flex-grow: 3; */
+    /* flex-shrink: auto; */
+    /* height: 80vh; */
+}
+
+figure .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3b3b3b;
+}
+
+figure .hero-text h1 {
+    margin-bottom: 8px;
+    font-size: 60px;
+}
+
+h1.work-title {
+    padding: 0 3%;
+}
+
+main {
+    padding: 0 3%;
+    flex: 1;
+}
+
+main section {
+    padding: 5px;
+    margin: 8px 0;
+
+}
+
+main section:nth-child(odd) {
+    padding: 5px;
+    margin: 8px 0;
+    background-color: rgb(251, 237, 211);
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 20px 3%;
+}
+
+footer p {
+    color: #fff;
+}
