@@ -33,6 +33,18 @@ p {
     font-size: 18px;
 }
 
+/* ANIMATIONS */
+
+@keyframes slide-in {
+    from {
+        left: -50px
+    }
+
+    to {
+        left: 0;
+    }
+}
+
 /* GLOBAL CLASSES */
 .main-color {
     color: var(--main-color);
@@ -52,16 +64,30 @@ header {
     padding: 8px 3%;
 }
 
-/* header .logo:active {
+header nav {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    text-align: right;
+}
 
-} */
+header nav a:after { 
+    content: 'hey';
+    text-decoration: underline;
+}
 
 header nav a:not(:last-child) {
     margin-right: 15px 
 }
 
-header nav a:hover {
-    text-decoration: underline;
+/* header nav a:hover { */
+    /* text-decoration: underline; */
+/* } */
+
+a#work-link {
+    position: absolute;
+    left: -50px;
+    animation: slide-in 8s forwards;
 }
 
 figure {
@@ -113,6 +139,22 @@ main section:nth-child(odd) {
 
 }
 
+.chat-box {
+    position: fixed;
+    z-index: 100;
+    bottom: 25px;
+    right: 25px;
+}
+
+.chat-box button {
+    padding: 10px 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    background-color: #3b3b3bcb;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -123,4 +165,5 @@ footer {
 
 footer p {
     color: #fff;
+    font-size: 12px;
 }
