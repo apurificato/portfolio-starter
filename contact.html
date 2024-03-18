@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Starter</title>
+        <title>Portfolio Starter - Contact Page</title>
 
         <link rel="stylesheet" href="./style.css">
     </head>
@@ -20,8 +20,20 @@
                 <a href="./contact.html">Contact</a>
             </nav>
         </header>
-        <h1 class="secondary-color">Contact Me</h1>
-
+        <main>
+            <h1 class="secondary-color text-center">Contact Me</h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="407a7ac5-808f-4f76-a23c-82e1c88be2d1"></input>
+                <input name="name" type="text" placeholder="Enter your name"></input>
+                <input name="email" type="email" placeholder="Enter your email address"></input>
+                <textarea name="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                <button>Submit</button>
+            </form>
+        </main>
+        <footer id="footer">
+            <p>&copy; 2024</p>
+            <p>Developed by Anthony Purificato</p>
+        </footer>
     </body>
 
 </html>
