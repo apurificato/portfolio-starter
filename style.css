@@ -20,6 +20,10 @@ body {
     flex-direction: column
 }
 
+h1 {
+    font-size: 60px;
+}
+
 a {
     color: var(--main-color);
     text-decoration: none;
@@ -115,18 +119,32 @@ figure .hero-text {
     justify-content: center;
     align-items: center;
     color: #3b3b3b;
+    padding: 40px 0 0;
 }
 
-figure .hero-text h1 {
-    margin-bottom: 8px;
+/* figure .hero-text h1 {
+    margin-bottom: 2px;
     font-size: 60px;
+} */
+
+figure .profile-image-wrap {
+    padding: 20px;
 }
 
-h1.work-title {
+h2.work-title {
     padding: 0 3% 20px;
+    font-size: 40px;
 }
 
 main {
+    padding: 0 3%;
+    flex: 1;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 15px;
+}
+
+main.main-index-page {
     padding: 0 3%;
     flex: 1;
     display: grid;
@@ -136,7 +154,6 @@ main {
 
 main section {
     padding: 15px;
-    /* margin: 8px 0; */
     background-color: var(--main-color);
 }
 
@@ -161,7 +178,12 @@ main section p {
     padding: 0 0 10px;
 }
 
-.text-center {
+.text-center h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.text-center p {
     text-align: center;
     padding-top: 20px;
 }
