@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio Starter</title>
+        <title>Portfolio Starter - Contact Page</title>
 
         <link rel="stylesheet" href="./style.css">
     </head>
@@ -13,15 +13,29 @@
     <body>
         <header>
             <a href="./index.html">
-                <h2 class:"main-color">Portfolio Starter</h2>
+                <h2 class="logo main-color">Anthony Purificato</h2>
             </a>
             <nav>
-                <a href="./about.html">About Me</a>
-                <a href="./contact.html">Contact</a>
+                <a href="./index.html#about-me">About Me</a>
+                <a href="./index.html#work">Work</a>
+                <a href="./contact.html">Contact Me</a>
             </nav>
         </header>
-        <h1 class="secondary-color">Contact Me</h1>
-
+        <main class="text-center">
+            <h1 class="secondary-color">Contact Me</h1>
+            <p class=>Don't be shy. Reach out to collaborate with me on a new project!</p>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="407a7ac5-808f-4f76-a23c-82e1c88be2d1"></input>
+                <input name="name" type="text" placeholder="Enter your name"></input>
+                <input name="email" type="email" placeholder="Enter your email address"></input>
+                <textarea name="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                <button>Submit</button>
+            </form>
+        </main>
+        <footer id="footer">
+            <p>&copy; 2024</p>
+            <p>Developed by Anthony Purificato</p>
+        </footer>
     </body>
 
 </html>
